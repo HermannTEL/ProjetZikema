@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html, body {
+  @apply bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-white transition-colors duration-300;
+}
+
+/* tailwind.config.js */
+.label {
+  @apply text-sm font-medium text-gray-600 dark:text-gray-300;
+}
+.input-style {
+  @apply w-full px-4 py-2 border dark:border-gray-700 rounded-md bg-gray-50 dark:bg-gray-700 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md;
+}
+
+/* Loader */
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-fast {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 1.5s linear infinite;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-spin-fast {
+  animation: spin-fast 0.5s linear infinite;
+}
